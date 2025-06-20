@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Welcome - Dayana's World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comfortaa', cursive;
+      background: linear-gradient(to bottom right, #eafff0, #ffeef5);
+      color: #4a4a4a;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+      background: linear-gradient(to right, #b4f0d8, #ffd6e7);
+      color: #4d2957;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin: 0;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      color: #4d2957;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #ffffffcc;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(200, 170, 190, 0.15);
+    }
+
+    h2 {
+      font-size: 2.3em;
+      color: #875c8c;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .start-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 26px;
+      font-size: 1.1em;
+      background: #ffd3e2;
+      color: #5c3d5b;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      box-shadow: 0 5px 12px rgba(255, 195, 230, 0.3);
+      text-decoration: none;
+    }
+
+    .start-btn:hover {
+      background: #ffc0d9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      background: linear-gradient(to right, #b4f0d8, #ffd6e7);
+      color: #4a4a4a;
+    }
+
+    /* Floating Soft Decor Emoji */
+    .floaty {
+      position: absolute;
+      font-size: 20px;
+      opacity: 0.3;
+      animation: floatUp 12s infinite ease-in-out;
+      pointer-events: none;
+    }
+
+    @keyframes floatUp {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+
+    .floaty:nth-child(1) { top: 12%; left: 10%; animation-delay: 0s; }
+    .floaty:nth-child(2) { top: 28%; left: 80%; animation-delay: 2s; }
+    .floaty:nth-child(3) { top: 55%; left: 20%; animation-delay: 4s; }
+    .floaty:nth-child(4) { top: 70%; left: 65%; animation-delay: 6s; }
+    .floaty:nth-child(5) { top: 85%; left: 30%; animation-delay: 8s; }
+
+  </style>
+</head>
+<body>
+
+  <!-- Soft Floating Decor -->
+  <div class="floaty">🌷</div>
+  <div class="floaty">☁️</div>
+  <div class="floaty">🌸</div>
+  <div class="floaty">🍃</div>
+  <div class="floaty">🦋</div>
+
+  <header>
+    <h1>🌼 Welcome to Dayana's World 🌼</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="hobby.html">Hobbies</a>
+      <a href="social.html">Social Media</a>
+      <a href="gallery.html">My Gallery</a> 
+    </nav>
+  </header>
+
+  <main>
+    <h2>Hi, I'm Dayana! 💖</h2>
+    <p>
+      I'm a 20-year-old student from Kuala Terengganu, currently studying at Universiti Putra Malaysia. <br><br>
+      This is my cute little website where I share everything I love — from my hobbies to my dreams. <br><br>
+      Take a look around and get to know me better 🌸
+    </p>
+    <a href="about.html" class="start-btn">Start Exploring</a>
+  </main>
+
+  <footer>
+    <p>Made with 💗 by Dayana Sofea | Zainal 🌿</p>
+  </footer>
+
+</body>
+</html>

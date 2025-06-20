@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Social Media - Dayana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comfortaa', cursive;
+      background: linear-gradient(to bottom right, #fdf6f9, #e0fff9);
+      color: #444;
+    }
+
+    header {
+      background: linear-gradient(to right, #b4f0d8, #ffd6e7);
+      text-align: center;
+      padding: 40px 20px;
+      color: #4d2957;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      color: #4d2957;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #fffefa;
+      border-radius: 25px;
+      box-shadow: 0 10px 20px rgba(200, 200, 200, 0.2);
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.2em;
+      margin-bottom: 30px;
+      color: #875c8c;
+    }
+
+    .social-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff4f7;
+      border-radius: 20px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 8px 15px rgba(255, 190, 210, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .platform {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #5c3d5b;
+    }
+
+    .link {
+      display: block;
+      margin-top: 8px;
+      font-size: 0.95em;
+      color: #874865;
+      text-decoration: none;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+
+    .image-placeholder {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      margin-top: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      background: linear-gradient(to right, #b4f0d8, #ffd6e7);
+      color: #4a4a4a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📱 Connect with Me!</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="hobby.html">Hobbies</a>
+      <a href="social.html">Social Media</a>
+      <a href="gallery.html">My Gallery</a> 
+    </nav>
+  </header>
+
+  <main>
+    <h2>Let’s Be Friends Online ✨</h2>
+    <div class="social-grid">
+      <div class="card">
+        <div class="icon">📷</div>
+        <div class="platform">Instagram</div>
+        <a class="link" href="#" target="_blank">@daynsofea</a>
+        <img src="instagram.jpg" alt="Instagram Image" class="image-placeholder">
+      </div>
+      <div class="card">
+        <div class="icon">🎶</div>
+        <div class="platform">TikTok</div>
+        <a class="link" href="#" target="_blank">@dynaoy</a>
+        <img src="tiktok.jpg" alt="TikTok Image" class="image-placeholder">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Stay in touch 💬 | Made with 💗 by Dayana Sofea</p>
+  </footer>
+
+</body>
+</html>

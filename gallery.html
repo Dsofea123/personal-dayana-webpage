@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Gallery - Dayana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comfortaa', cursive;
+      background: linear-gradient(to bottom, #fff0f5, #e0ffff);
+      color: #444;
+    }
+
+    header {
+      background: linear-gradient(to right, #ffd3ec, #c1f0f6);
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #6b3e75;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      color: #6b3e75;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #ffffffcc;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #804d7a;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .music-section {
+      margin-top: 40px;
+    }
+
+    .music-button {
+      background-color: #ffaad4;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 12px 24px;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
+      transition: background-color 0.3s;
+    }
+
+    .music-button:hover {
+      background-color: #ff7fc2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #ffd3ec, #c1f0f6);
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📸 My Gallery</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="hobby.html">Hobbies</a>
+      <a href="social.html">Social Media</a>
+      <a href="gallery.html">My Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Favourite Moments 💕</h2>
+    <div class="gallery">
+      <img src="gallery1.jpg" alt="Gallery Image 1">
+      <img src="gallery2.jpg" alt="Gallery Image 2">
+      <img src="gallery3.jpg" alt="Gallery Image 3">
+      <img src="gallery4.jpg" alt="Gallery Image 4">
+      <img src="gallery5.jpg" alt="Gallery Image 5">
+      <img src="gallery6.jpg" alt="Gallery Image 6">
+    </div>
+
+    <h2>🎶 My Playlist</h2>
+    <div class="music-section">
+      <button class="music-button" onclick="document.getElementById('music').play()">🎧 Play My Song</button>
+      <audio id="music" src="https://media.vocaroo.com/mp3/1lsbLKZt0mY5"></audio>
+    </div>
+  </main>
+
+  <footer>
+    <p>Made with 💖 by Dayana Sofea | UPM</p>
+  </footer>
+
+</body>
+</html>
